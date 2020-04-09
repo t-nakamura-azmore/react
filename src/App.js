@@ -27,6 +27,7 @@ class Counter extends Component
     {
       return(
         <div>
+          <p>カウントアプリ</p>
           <div>
           カウント値：{this.state.value}
           </div>
