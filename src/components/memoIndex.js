@@ -46,6 +46,6 @@ class MemoIndex extends Component{
 
 const mapStateToProps = state => ({ memos : state.memos });
 
-const mamDispatchToProps = ({ getMemos })
+const mapDispatchToProps = ({ getMemos })
 
-export default connect( mapStateToProps, mamDispatchToProps )(MemoIndex);
+export default connect( mapStateToProps, mapDispatchToProps )(MemoIndex);

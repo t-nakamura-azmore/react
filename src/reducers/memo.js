@@ -10,18 +10,18 @@ const getUniqueStr = () =>{
   return new Date().getTime().toString(16);
 }
 export default(memos = {},action)=>{
-  switch (action.type) {
+  switch(action.type) {
     case READ_MEMOS:
       return memos;
     case READ_MEMO:
       return memos;
     case ADD_MEMO:
-    const insertData ={
+    const insertData = {
       id : getUniqueStr(),
-      title:action.params.titie,
+      title :action.params.titie,
       memo : action.params.memo,
     }
-      return {...memos,[getUniqueStr()]:insertData};
+      return {...memos,[getUniqueStr()] : insertData};
 
     case UPDATE_MEMO:
     const updateData ={
@@ -29,7 +29,7 @@ export default(memos = {},action)=>{
       title:action.params.titie,
       memo : action.params.memo,
     }
-      return {...memos,[updateData.id]:updateData};
+      return {...memos,[updateData.id] : updateData};
     case DELETE_MEMO:
       delete memos[action.id];
       return {...memos};

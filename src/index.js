@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { Switch,BrowserRouter,Route } from 'react-router-dom';
-
+import {Switch, BrowserRouter, Route } from 'react-router-dom';
 import MemoIndex from './components/memoIndex';
 import MemoNew from './components/memoNew';
 import MemoShow from './components/memoShow';
